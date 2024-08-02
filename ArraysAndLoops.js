@@ -24,6 +24,22 @@ console.log(sumWhitInitialR + " ohms");
 /*function sumResistance (resistors);
 let totalResistors = 0
 for(let i = 0 )*/
+/////
+
+// An array is declared with the data from the first example
+const sumResistance1 = [-1,5,6,3];
+// Variable is initialized
+const initialR = 0;
+// Using reduce() method
+const sumWhitInitialR = sumResistance1.reduce(
+    (accumulatorR, currentValueR) => accumulatorR + Math.abs(currentValueR), initialR, //applying absolute value in 'currentValueR'
+);
+
+console.log(sumWhitInitialR + " ohms");
+/*function sumResistance (resistors);
+let totalResistors = 0
+for(let i = 0 )*/
+/////
 
 
 
